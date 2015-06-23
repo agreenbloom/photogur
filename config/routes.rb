@@ -6,6 +6,10 @@ post 'pictures' => 'pictures#create'
 get 'pictures/new' => 'pictures#new'
 
 
+get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+patch 'pictures/:id' => "picture#update"
+
+
 get 'pictures/:id' => 'pictures#show', as: 'picture'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -63,3 +67,4 @@ get 'pictures/:id' => 'pictures#show', as: 'picture'
   #     resources :products
   #   end
 end
+
