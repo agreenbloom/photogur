@@ -1,7 +1,7 @@
 <h1>Add a picture</h1>
 
 
-<%= form_tag "/pictures" do %>
+<%= form_tag "@pictures" do |f| %>
   <p>
     <%= label_tag :artist %><br>
     <%= text_field_tag :artist %>
